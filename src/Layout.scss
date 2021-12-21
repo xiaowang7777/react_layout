@@ -1,0 +1,88 @@
+@import "assets/css/flex";
+
+#layout-lay {
+  @extend %flex-column-start;
+  width: calc(100vw);
+  height: calc(100vh - 10px);
+
+  #header {
+    width: calc(100vw);
+    height: calc(10vh);
+
+    #layout-header {
+      background-color: cyan;
+      height: 100%;
+    }
+  }
+
+  #main.init {
+    @extend %flex-row-start;
+    width: calc(100vw);
+    height: calc(80vh);
+
+    #layout-sidebar {
+      @extend %flex-column-start;
+      background-color: aquamarine;
+      height: 100%;
+      width: 20%;
+
+      #child {
+        @extend %flex-row-end;
+        width: 100%;
+        height: 5px;
+        button {
+          border: none;
+          color: white;
+          background-color: lightskyblue;
+        }
+      }
+    }
+    #layout-main {
+      background-color: cadetblue;
+      height: 100%;
+      width: 80%;
+    }
+  }
+
+  #main.new {
+    @extend %flex-row-start;
+    width: calc(100vw);
+    height: calc(80vh);
+
+    #layout-sidebar {
+      @extend %flex-column-start;
+      background-color: aquamarine;
+      height: 100%;
+      width: 10%;
+
+      #child {
+        @extend %flex-row-end;
+        width: 100%;
+        height: 5px;
+        button {
+          border: none;
+          color: white;
+          background-color: lightskyblue;
+        }
+      }
+    }
+    #layout-main {
+      background-color: cadetblue;
+      height: 100%;
+      width: 90%;
+    }
+  }
+
+
+
+  #footer {
+    width: calc(100vw);
+    height: calc(10vh - 10px);
+
+    #layout-footer {
+      background-color: darkcyan;
+      height: 100%;
+      width: 100%;
+    }
+  }
+}
