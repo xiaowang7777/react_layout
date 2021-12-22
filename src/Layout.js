@@ -1,5 +1,5 @@
 import React from "react";
-import './Layout.scss'
+import './Layout.scss';
 
 class Layout extends React.Component {
   constructor(props) {
@@ -55,9 +55,9 @@ class Layout extends React.Component {
 class Header extends React.Component {
   render() {
     return (
-      <div id="layout-header">
+      <React.Fragment>
 
-      </div>
+      </React.Fragment>
     )
   }
 }
@@ -90,9 +90,9 @@ class Main extends React.Component {
 class Footer extends React.Component {
   render() {
     return (
-      <div id="layout-footer">
+      <React.Fragment>
 
-      </div>
+      </React.Fragment>
     )
   }
 }
@@ -108,18 +108,18 @@ class SidebarChild extends React.Component {
 
   handlerOnClick(e) {
     this.props.onClick(e);
-    this.setState((state)=>({
+    this.setState((state) => ({
       clicked: !state.clicked
     }))
   }
 
   render() {
     return (
-      <div id="sidebar-child">
+      <React.Fragment>
         <button id="sidebar-child-btn" onClick={this.handlerOnClick}>
           {this.state.clicked ? "展开" : "收起"}
         </button>
-      </div>
+      </React.Fragment>
     )
   }
 }

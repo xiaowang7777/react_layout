@@ -1,11 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import reportWebVitals from './reportWebVitals';
-import {Layout} from "./Layout";
-
+import {CustomTextInput} from "./RefTest";
 ReactDOM.render(
   <React.StrictMode>
-    <Layout />
+    <CustomTextInput />
   </React.StrictMode>,
   document.getElementById('root')
 );

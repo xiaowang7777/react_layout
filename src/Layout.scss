@@ -8,11 +8,7 @@
   #header {
     width: calc(100vw);
     height: calc(10vh);
-
-    #layout-header {
-      background-color: cyan;
-      height: 100%;
-    }
+    background-color: cyan;
   }
 
   #main.init {
@@ -30,6 +26,7 @@
         @extend %flex-row-end;
         width: 100%;
         height: 5px;
+
         button {
           border: none;
           color: white;
@@ -37,6 +34,7 @@
         }
       }
     }
+
     #layout-main {
       background-color: cadetblue;
       height: 100%;
@@ -59,6 +57,7 @@
         @extend %flex-row-end;
         width: 100%;
         height: 5px;
+
         button {
           border: none;
           color: white;
@@ -66,6 +65,7 @@
         }
       }
     }
+
     #layout-main {
       background-color: cadetblue;
       height: 100%;
@@ -74,15 +74,9 @@
   }
 
 
-
   #footer {
     width: calc(100vw);
     height: calc(10vh - 10px);
-
-    #layout-footer {
-      background-color: darkcyan;
-      height: 100%;
-      width: 100%;
-    }
+    background-color: darkcyan;
   }
 }
